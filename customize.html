@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Alberto Clock | Customize</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body data-page="customize">
+
+<!-- One-time 5-second branded website preloader -->
+<div id="splash" aria-label="Alberto Clock loading">
+  <div class="splash-inner">
+    <span class="logo-wrap" data-logo></span>
+    <div class="splash-brand">ALBERTO <span>CLOCK</span></div>
+    <p>Timeless elegance. Every second matters.</p>
+    <div class="loading-line" role="progressbar" aria-label="Website loading"></div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" data-go="home"><span class="logo-wrap" data-logo></span><span>Alberto Clock</span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="main-nav">
+      <a href="index.html" data-go="home" data-nav="home">Home</a>
+      <a href="about.html" data-go="about" data-nav="about">About Us</a>
+      <a href="collection.html" data-go="collection" data-nav="collection">Collection</a>
+      <a href="gallery.html" data-go="gallery" data-nav="gallery">Gallery</a>
+      <a href="stores.html" data-go="stores" data-nav="stores">Store Locator</a>
+      <a href="offers.html" data-go="offers" data-nav="offers">Offers</a>
+      <a href="repair.html" data-go="repair" data-nav="repair">Repair</a>
+      <a href="customize.html" data-go="customize" data-nav="customize">Customize</a>
+      <a href="faq.html" data-go="faq" data-nav="faq">FAQ &amp; Feedback</a>
+      <a href="contact.html" data-go="contact" data-nav="contact">Contact</a>
+      <a href="wishlist.html" data-go="wishlist" data-nav="wishlist" class="wishlist-nav" aria-label="Wishlist"><span class="wish-heart" aria-hidden="true">♡</span><span>Wishlist</span><span class="cart-count" id="wish-count">0</span></a>
+      <a href="cart.html" data-go="cart" data-nav="cart" aria-label="Cart">🛒 <span class="cart-count" id="cart-count">0</span></a>
+    </nav>
+  </div>
+</header>
+
+<div hidden>
+  <video id="hero-video" autoplay muted loop playsinline preload="auto"></video>
+</div>
+
+<main>
+
+<!-- ============ CUSTOMIZE ============ -->
+<section class="page active" id="page-customize">
+  <div class="page-banner"><h1>Customize</h1><p class="slogan">Your style. Your story. Made just for you.</p><p class="sub">Design your own watch or wall clock with Alberto Clock</p></div>
+
+  <section class="section">
+    <h2 class="section-title">What Would You Like to Customize?</h2>
+    <div class="cz-grid">
+      <article class="cz-card reveal">
+        <div class="cz-photo"><img data-img="men4" alt="Customize watch" loading="lazy"><span class="cz-tag">Watch</span></div>
+        <div class="cz-body">
+          <h3>⌚ Customize Watch</h3>
+          <p>Create a watch that is truly yours. Pick the dial, strap and case, add a personal engraving, and we will build it to your design.</p>
+          <ul class="cz-list"><li>Dial colour</li><li>Strap type &amp; colour</li><li>Case material</li><li>Case size</li><li>Back engraving</li></ul>
+          <button type="button" class="btn" data-cz-open="watch">Customize Watch</button>
+        </div>
+      </article>
+      <article class="cz-card reveal">
+        <div class="cz-photo cz-photo--wall"><img data-img="wall3" alt="Customize wall clock" loading="lazy"><span class="cz-tag">Wall Clock</span></div>
+        <div class="cz-body">
+          <h3>🕰️ Customize Wall Clock</h3>
+          <p>Handcrafted in solid wood, polished steel, or a mix of both. Choose the size, shape and finish that suits your room perfectly.</p>
+          <ul class="cz-list"><li>Wood or steel</li><li>Wood type &amp; finish</li><li>Size &amp; shape</li><li>Dial style</li><li>Name engraving</li></ul>
+          <button type="button" class="btn" data-cz-open="wall">Customize Wall Clock</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--light-grey)">
+    <h2 class="section-title">What You Can Customize</h2>
+    <div class="cz-features">
+      <div class="cz-feat reveal"><span>🎨</span><h4>Dial</h4><p>Colour, style and your own text.</p></div>
+      <div class="cz-feat reveal"><span>🔗</span><h4>Straps</h4><p>Leather, steel, rubber or fabric.</p></div>
+      <div class="cz-feat reveal"><span>🛡️</span><h4>Case</h4><p>Steel, gold or rose gold plated.</p></div>
+      <div class="cz-feat reveal"><span>🪵</span><h4>Wood</h4><p>Walnut, oak, teak and more.</p></div>
+      <div class="cz-feat reveal"><span>🔩</span><h4>Steel</h4><p>Brushed, chrome, black or gold.</p></div>
+      <div class="cz-feat reveal"><span>✍️</span><h4>Engraving</h4><p>Names, dates and short messages.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">How It Works</h2>
+    <div class="cz-steps">
+      <div class="cz-step reveal"><h4>Choose</h4><p>Select watch or wall clock.</p></div>
+      <div class="cz-step reveal"><h4>Design</h4><p>Fill the form with your choices.</p></div>
+      <div class="cz-step reveal"><h4>Confirm</h4><p>Our team calls you with price and time.</p></div>
+      <div class="cz-step reveal"><h4>Receive</h4><p>Delivered to your door across Pakistan.</p></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:10px">
+    <div class="cz-cta reveal">
+      <h2>Ready to design yours?</h2>
+      <p>Tell us what you imagine and our craftsmen will bring it to life.</p>
+      <div class="hero-actions"><button type="button" class="btn" data-cz-open="watch">Customize Watch</button><button type="button" class="btn btn-outline" data-cz-open="wall">Customize Wall Clock</button></div>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<div class="cform-overlay" id="contact-modal"><div class="cform-box"><button class="cform-close" id="close-contact-form" type="button" aria-label="Close">&times;</button><h2>✉️ Send Us a Message</h2><form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="ct-name">Full Name</label>
+            <input id="ct-name" type="text" placeholder="Enter your full name">
+            <span class="error" id="ct-e-name">Please enter your name</span>
+            </div>
+          <div class="form-group">
+            <label for="ct-email">Email Address</label>
+            <input id="ct-email" type="email" placeholder="you@example.com">
+            <span class="error" id="ct-e-email">Please enter a valid email address</span>
+            </div>
+          <div class="form-group">
+            <label for="ct-phone">Mobile Number</label>
+            <input id="ct-phone" type="tel" maxlength="11" placeholder="e.g. 03001234567">
+            <span class="error" id="ct-e-phone">Please enter a valid mobile number (e.g. 03001234567)</span>
+            </div>
+          <div class="form-group">
+            <label for="ct-msg">Message</label>
+            <textarea id="ct-msg" rows="4" placeholder="How can we help you?">
+            </textarea>
+            <span class="error" id="ct-e-msg">Please enter a message of at least 5 characters</span>
+            </div>
+          <button type="submit" class="btn btn-block">Send Message</button>
+        </form></div></div>
+
+<!-- ============ CUSTOMIZE POPUPS ============ -->
+<div class="cform-overlay cz-modal" id="cz-watch-modal" role="dialog" aria-modal="true" aria-labelledby="cz-w-title"><div class="cform-box">
+  <button class="cform-close" type="button" data-cz-close aria-label="Close">&times;</button>
+  <h2 id="cz-w-title">⌚ Customize Your Watch</h2>
+  <p class="cz-sub">Design it your way. We will call you to confirm price and delivery time.</p>
+  <div class="cz-preview" aria-hidden="true">
+    <svg id="cz-w-prev" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="--strap:#3b2a20;--case:#d9b56a;--dial:#1c1c1c;--hand:#f7f1e3">
+      <rect x="76" y="2" width="48" height="62" rx="12" fill="var(--strap)"/>
+      <rect x="76" y="136" width="48" height="62" rx="12" fill="var(--strap)"/>
+      <g stroke="rgba(0,0,0,.25)" stroke-width="1.5"><line x1="84" y1="14" x2="116" y2="14"/><line x1="84" y1="26" x2="116" y2="26"/><line x1="84" y1="38" x2="116" y2="38"/><line x1="84" y1="162" x2="116" y2="162"/><line x1="84" y1="174" x2="116" y2="174"/><line x1="84" y1="186" x2="116" y2="186"/></g>
+      <circle cx="100" cy="100" r="56" fill="var(--case)"/>
+      <circle cx="100" cy="100" r="48" fill="var(--dial)" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+      <g stroke="var(--hand)" stroke-width="2.5" stroke-linecap="round"><line x1="100" y1="58" x2="100" y2="66"/><line x1="100" y1="134" x2="100" y2="142"/><line x1="58" y1="100" x2="66" y2="100"/><line x1="134" y1="100" x2="142" y2="100"/></g>
+      <line x1="100" y1="100" x2="100" y2="73" stroke="var(--hand)" stroke-width="4" stroke-linecap="round"/>
+      <line x1="100" y1="100" x2="124" y2="112" stroke="var(--hand)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="100" cy="100" r="4" fill="var(--case)"/>
+      <rect x="156" y="94" width="9" height="12" rx="3" fill="var(--case)"/>
+    </svg>
+  </div>
+  <form id="cz-watch-form" novalidate>
+    <div class="cz-sec">1. Watch Style</div>
+    <div class="form-group"><span class="cz-lab">Watch for</span>
+      <div class="cz-opts">
+        <label class="cz-opt"><input type="radio" name="w-for" value="Men" checked><span>Men</span></label>
+        <label class="cz-opt"><input type="radio" name="w-for" value="Women"><span>Women</span></label>
+        <label class="cz-opt"><input type="radio" name="w-for" value="Unisex"><span>Unisex</span></label>
+      </div></div>
+    <div class="form-group"><span class="cz-lab">Dial colour</span>
+      <div class="cz-sws" data-var="dial">
+        <label class="cz-sw"><input type="radio" name="w-dial" value="Black" data-c="#1c1c1c" data-h="#f7f1e3" checked><i style="background:#1c1c1c"></i><em>Black</em></label>
+        <label class="cz-sw"><input type="radio" name="w-dial" value="White" data-c="#f7f4ec" data-h="#3f0d19"><i style="background:#f7f4ec"></i><em>White</em></label>
+        <label class="cz-sw"><input type="radio" name="w-dial" value="Burgundy" data-c="#5a1424" data-h="#f7f1e3"><i style="background:#5a1424"></i><em>Burgundy</em></label>
+        <label class="cz-sw"><input type="radio" name="w-dial" value="Navy Blue" data-c="#1d2f5a" data-h="#f7f1e3"><i style="background:#1d2f5a"></i><em>Navy</em></label>
+        <label class="cz-sw"><input type="radio" name="w-dial" value="Emerald Green" data-c="#1f4d3a" data-h="#f7f1e3"><i style="background:#1f4d3a"></i><em>Emerald</em></label>
+        <label class="cz-sw"><input type="radio" name="w-dial" value="Champagne" data-c="#e8d5a8" data-h="#3f0d19"><i style="background:#e8d5a8"></i><em>Champagne</em></label>
+      </div></div>
+    <div class="form-group"><label for="w-dialtext">Text or name on dial <small>(optional)</small></label><input id="w-dialtext" type="text" maxlength="20" placeholder="e.g. your name or brand"></div>
+
+    <div class="cz-sec">2. Case &amp; Strap</div>
+    <div class="form-group"><span class="cz-lab">Case material</span>
+      <div class="cz-opts" data-var="case">
+        <label class="cz-opt"><input type="radio" name="w-case" value="Stainless Steel" data-c="#c4c8cc" checked><span>Stainless Steel</span></label>
+        <label class="cz-opt"><input type="radio" name="w-case" value="Gold Plated" data-c="#d9b56a"><span>Gold Plated</span></label>
+        <label class="cz-opt"><input type="radio" name="w-case" value="Rose Gold Plated" data-c="#c98b7c"><span>Rose Gold Plated</span></label>
+        <label class="cz-opt"><input type="radio" name="w-case" value="Black Steel" data-c="#2b2b2e"><span>Black Steel</span></label>
+      </div></div>
+    <div class="form-group"><span class="cz-lab">Strap type</span>
+      <div class="cz-opts">
+        <label class="cz-opt"><input type="radio" name="w-strap" value="Leather" checked><span>Leather</span></label>
+        <label class="cz-opt"><input type="radio" name="w-strap" value="Steel Chain"><span>Steel Chain</span></label>
+        <label class="cz-opt"><input type="radio" name="w-strap" value="Rubber"><span>Rubber</span></label>
+        <label class="cz-opt"><input type="radio" name="w-strap" value="Fabric / NATO"><span>Fabric / NATO</span></label>
+      </div></div>
+    <div class="form-group"><span class="cz-lab">Strap colour</span>
+      <div class="cz-sws" data-var="strap">
+        <label class="cz-sw"><input type="radio" name="w-scol" value="Black" data-c="#1c1c1c"><i style="background:#1c1c1c"></i><em>Black</em></label>
+        <label class="cz-sw"><input type="radio" name="w-scol" value="Dark Brown" data-c="#3b2a20" checked><i style="background:#3b2a20"></i><em>Dark Brown</em></label>
+        <label class="cz-sw"><input type="radio" name="w-scol" value="Tan" data-c="#b07a45"><i style="background:#b07a45"></i><em>Tan</em></label>
+        <label class="cz-sw"><input type="radio" name="w-scol" value="Burgundy" data-c="#5a1424"><i style="background:#5a1424"></i><em>Burgundy</em></label>
+        <label class="cz-sw"><input type="radio" name="w-scol" value="Navy Blue" data-c="#1d2f5a"><i style="background:#1d2f5a"></i><em>Navy</em></label>
+        <label class="cz-sw"><input type="radio" name="w-scol" value="Silver" data-c="#c4c8cc"><i style="background:#c4c8cc"></i><em>Silver</em></label>
+        <label class="cz-sw"><input type="radio" name="w-scol" value="Gold" data-c="#d9b56a"><i style="background:#d9b56a"></i><em>Gold</em></label>
+        <label class="cz-sw"><input type="radio" name="w-scol" value="Rose Gold" data-c="#c98b7c"><i style="background:#c98b7c"></i><em>Rose Gold</em></label>
+      </div></div>
+    <div class="cz-row">
+      <div class="form-group"><label for="w-size">Case size</label>
+        <select id="w-size"><option>28 mm</option><option>32 mm</option><option>36 mm</option><option selected>40 mm</option><option>42 mm</option><option>44 mm</option></select></div>
+      <div class="form-group"><label for="w-qty">Quantity</label><input id="w-qty" type="number" min="1" max="100" value="1"></div>
+    </div>
+    <div class="form-group"><label for="w-engrave">Back engraving <small>(optional)</small></label><input id="w-engrave" type="text" maxlength="30" placeholder="Name, date or short message"></div>
+
+    <div class="cz-sec">3. Your Details</div>
+    <div class="cz-row">
+      <div class="form-group"><label for="w-name">Full Name</label><input id="w-name" type="text" placeholder="Enter your full name"><span class="error" id="w-e-name">Please enter your name</span></div>
+      <div class="form-group"><label for="w-phone">Mobile Number</label><input id="w-phone" type="tel" maxlength="11" placeholder="e.g. 03001234567"><span class="error" id="w-e-phone">Please enter a valid mobile number (e.g. 03001234567)</span></div>
+    </div>
+    <div class="form-group"><label for="w-address">Address</label><textarea id="w-address" rows="2" placeholder="Your complete delivery address"></textarea><span class="error" id="w-e-address">Please enter your complete address</span></div>
+    <div class="form-group"><label for="w-notes">Extra ideas or notes <small>(optional)</small></label><textarea id="w-notes" rows="2" placeholder="Anything else you would like us to know"></textarea></div>
+    <button type="submit" class="btn btn-block">Submit Watch Request</button>
+    <p class="cz-note">No payment now. We will contact you to confirm the final price.</p>
+  </form>
+</div></div>
+
+<div class="cform-overlay cz-modal" id="cz-wall-modal" role="dialog" aria-modal="true" aria-labelledby="cz-c-title"><div class="cform-box">
+  <button class="cform-close" type="button" data-cz-close aria-label="Close">&times;</button>
+  <h2 id="cz-c-title">🕰️ Customize Your Wall Clock</h2>
+  <p class="cz-sub">Wood, steel or both. Made to fit your wall and your taste.</p>
+  <div class="cz-preview" aria-hidden="true">
+    <svg id="cz-c-prev" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="--frame:#5b3a29;--face:#f7f1e3;--ink:#3f0d19;--ring:#d9b56a">
+      <defs><pattern id="czgrain" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 2 Q4 0 8 2 M0 6 Q4 4 8 6" stroke="rgba(0,0,0,.18)" stroke-width="1" fill="none"/></pattern></defs>
+      <circle id="cz-sh-round" cx="100" cy="100" r="94" fill="var(--frame)"/>
+      <rect id="cz-sh-square" class="cz-hide" x="8" y="8" width="184" height="184" rx="14" fill="var(--frame)"/>
+      <polygon id="cz-sh-oct" class="cz-hide" points="60,6 140,6 194,60 194,140 140,194 60,194 6,140 6,60" fill="var(--frame)"/>
+      <g id="cz-grain"><circle cx="100" cy="100" r="94" fill="url(#czgrain)"/></g>
+      <circle cx="100" cy="100" r="68" fill="var(--ring)"/>
+      <circle cx="100" cy="100" r="65" fill="var(--face)"/>
+      <g id="cz-nums" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">
+        <text x="100" y="47">XII</text><text x="154" y="105">III</text><text x="100" y="164">VI</text><text x="46" y="105">IX</text>
+      </g>
+      <g id="cz-dots" class="cz-hide" fill="var(--ink)"><circle cx="100" cy="42" r="3"/><circle cx="158" cy="100" r="3"/><circle cx="100" cy="158" r="3"/><circle cx="42" cy="100" r="3"/></g>
+      <text id="cz-ctext" x="100" y="126" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="9" fill="var(--ink)"></text>
+      <line x1="100" y1="100" x2="100" y2="62" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+      <line x1="100" y1="100" x2="128" y2="114" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="100" cy="100" r="4" fill="var(--ring)" stroke="var(--ink)" stroke-width="1.5"/>
+    </svg>
+  </div>
+  <form id="cz-wall-form" novalidate>
+    <div class="cz-sec">1. Material</div>
+    <div class="form-group"><div class="cz-tiles" id="c-mat">
+      <label class="cz-tile"><input type="radio" name="c-mat" value="Wood" checked><span><b>🪵</b>Wood</span></label>
+      <label class="cz-tile"><input type="radio" name="c-mat" value="Steel"><span><b>🔩</b>Steel</span></label>
+      <label class="cz-tile"><input type="radio" name="c-mat" value="Wood + Steel"><span><b>✨</b>Wood + Steel</span></label>
+    </div></div>
+    <div class="form-group" id="c-wood-box"><span class="cz-lab">Wood type</span>
+      <div class="cz-sws">
+        <label class="cz-sw"><input type="radio" name="c-wood" value="Walnut" data-c="#5b3a29" checked><i style="background:#5b3a29"></i><em>Walnut</em></label>
+        <label class="cz-sw"><input type="radio" name="c-wood" value="Oak" data-c="#b98b52"><i style="background:#b98b52"></i><em>Oak</em></label>
+        <label class="cz-sw"><input type="radio" name="c-wood" value="Teak" data-c="#8a5a2b"><i style="background:#8a5a2b"></i><em>Teak</em></label>
+        <label class="cz-sw"><input type="radio" name="c-wood" value="Mahogany" data-c="#4a1f1a"><i style="background:#4a1f1a"></i><em>Mahogany</em></label>
+        <label class="cz-sw"><input type="radio" name="c-wood" value="Ebony Black" data-c="#1f1a17"><i style="background:#1f1a17"></i><em>Ebony</em></label>
+      </div></div>
+    <div class="form-group cz-hide" id="c-steel-box"><span class="cz-lab">Steel finish</span>
+      <div class="cz-sws">
+        <label class="cz-sw"><input type="radio" name="c-steel" value="Brushed Silver" data-c="#b9bcc0" checked><i style="background:#b9bcc0"></i><em>Brushed</em></label>
+        <label class="cz-sw"><input type="radio" name="c-steel" value="Polished Chrome" data-c="#dfe3e8"><i style="background:#dfe3e8"></i><em>Chrome</em></label>
+        <label class="cz-sw"><input type="radio" name="c-steel" value="Black Steel" data-c="#2a2c30"><i style="background:#2a2c30"></i><em>Black</em></label>
+        <label class="cz-sw"><input type="radio" name="c-steel" value="Gold Finish" data-c="#d1a954"><i style="background:#d1a954"></i><em>Gold</em></label>
+        <label class="cz-sw"><input type="radio" name="c-steel" value="Rose Gold Finish" data-c="#b76e79"><i style="background:#b76e79"></i><em>Rose Gold</em></label>
+      </div></div>
+
+    <div class="cz-sec">2. Shape, Size &amp; Dial</div>
+    <div class="form-group"><span class="cz-lab">Shape</span>
+      <div class="cz-opts">
+        <label class="cz-opt"><input type="radio" name="c-shape" value="Round" checked><span>Round</span></label>
+        <label class="cz-opt"><input type="radio" name="c-shape" value="Square"><span>Square</span></label>
+        <label class="cz-opt"><input type="radio" name="c-shape" value="Octagon"><span>Octagon</span></label>
+      </div></div>
+    <div class="cz-row">
+      <div class="form-group"><label for="c-size">Size (diameter)</label>
+        <select id="c-size"><option>12 inch</option><option>16 inch</option><option selected>20 inch</option><option>24 inch</option><option>30 inch</option><option>36 inch</option></select></div>
+      <div class="form-group"><label for="c-qty">Quantity</label><input id="c-qty" type="number" min="1" max="100" value="1"></div>
+    </div>
+    <div class="form-group"><span class="cz-lab">Dial style</span>
+      <div class="cz-opts">
+        <label class="cz-opt"><input type="radio" name="c-dial" value="Roman Numerals" checked><span>Roman</span></label>
+        <label class="cz-opt"><input type="radio" name="c-dial" value="Numeric (1 to 12)"><span>Numeric</span></label>
+        <label class="cz-opt"><input type="radio" name="c-dial" value="Minimal (no numbers)"><span>Minimal</span></label>
+      </div></div>
+    <div class="cz-row">
+      <div class="form-group"><span class="cz-lab">Pendulum</span>
+        <div class="cz-opts">
+          <label class="cz-opt"><input type="radio" name="c-pend" value="Yes"><span>Yes</span></label>
+          <label class="cz-opt"><input type="radio" name="c-pend" value="No" checked><span>No</span></label>
+        </div></div>
+      <div class="form-group"><label for="c-engrave">Name or text <small>(optional)</small></label><input id="c-engrave" type="text" maxlength="24" placeholder="e.g. Khan Family"></div>
+    </div>
+
+    <div class="cz-sec">3. Your Details</div>
+    <div class="cz-row">
+      <div class="form-group"><label for="cz-c-name">Full Name</label><input id="cz-c-name" type="text" placeholder="Enter your full name"><span class="error" id="cz-c-e-name">Please enter your name</span></div>
+      <div class="form-group"><label for="cz-c-phone">Mobile Number</label><input id="cz-c-phone" type="tel" maxlength="11" placeholder="e.g. 03001234567"><span class="error" id="cz-c-e-phone">Please enter a valid mobile number (e.g. 03001234567)</span></div>
+    </div>
+    <div class="form-group"><label for="cz-c-address">Address</label><textarea id="cz-c-address" rows="2" placeholder="Your complete delivery address"></textarea><span class="error" id="cz-c-e-address">Please enter your complete address</span></div>
+    <div class="form-group"><label for="c-notes">Extra ideas or notes <small>(optional)</small></label><textarea id="c-notes" rows="2" placeholder="Anything else you would like us to know"></textarea></div>
+    <button type="submit" class="btn btn-block">Submit Wall Clock Request</button>
+    <p class="cz-note">No payment now. We will contact you to confirm the final price.</p>
+  </form>
+</div></div>
+
+<div class="popup-overlay" id="cz-popup">
+  <div class="popup-box">
+    <h3>Request Received!</h3>
+    <p>Thank you! Our team will contact you shortly to confirm your custom design.</p>
+    <span class="cz-ref" id="cz-ref">ALB-000000</span>
+    <p style="font-size:.85rem">Keep this reference number for follow up.</p><br>
+    <div class="cz-pop-actions"><a class="btn" id="cz-wa" href="#" target="_blank" rel="noopener">Send on WhatsApp</a><button class="btn btn-outline" id="cz-ok" type="button">OK</button></div>
+  </div>
+</div>
+
+
+<!-- Gallery lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="close" id="lb-close" aria-label="Close">&times;</button>
+  <div class="big-pic" id="lb-pic"></div>
+  <div class="big-name" id="lb-name"></div>
+</div>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-ticker" aria-label="Store announcements"><div class="ticker-track"><span>Free replacement within 7 days on damaged items</span><span>Delivery in 3 to 5 working days across Pakistan</span><span>Cash on Delivery available</span><span>Six offers live: BOGO, HALF50, OFF10, OFF20, OFF30 and OFF40</span><span>Repair service for watches and wall clocks</span><span>Free replacement within 7 days on damaged items</span><span>Delivery in 3 to 5 working days across Pakistan</span><span>Cash on Delivery available</span><span>Six offers live: BOGO, HALF50, OFF10, OFF20, OFF30 and OFF40</span><span>Repair service for watches and wall clocks</span></div></div>
+  <div class="footer-grid">
+    <div class="footer-logo"><span class="logo-wrap" data-logo></span><strong>Alberto Clock</strong></div>
+    <div><h4>Explore</h4><ul><li><a href="index.html" data-go="home">Home</a></li><li><a href="collection.html" data-go="collection">Collection</a></li><li><a href="gallery.html" data-go="gallery">Gallery</a></li><li><a href="stores.html" data-go="stores">Store Locator</a></li><li><a href="offers.html" data-go="offers">Offers</a></li></ul></div>
+    <div><h4>Quick Links</h4><ul><li><a href="about.html" data-go="about">About Us</a></li><li><a href="repair.html" data-go="repair">Repair Service</a></li><li><a href="customize.html" data-go="customize">Customize</a></li><li><a href="contact.html" data-go="contact">Contact Us</a></li><li><a href="faq.html" data-go="faq">FAQ &amp; Feedback</a></li><li><a href="sitemap.html" data-go="sitemap">Site Map</a></li></ul></div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="contact-list">
+        <li>📍 <strong>Address:</strong> North Karachi, Karachi, Pakistan</li>
+        <li>📞 <strong>Phone:</strong> <a href="tel:+923000000000">+92 300 0000000</a></li>
+        <li>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/923000000000" target="_blank" rel="noopener">+92 300 0000000</a></li>
+        <li>✉️ <strong>Email:</strong> <a href="mailto:info@albertoclock.com">info@albertoclock.com</a></li>
+        <li>🕒 <strong>Hours:</strong> Mon to Sat, 10:00 AM to 8:00 PM</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <p>Follow us for new arrivals and offers.</p>
+      <p class="social">
+        <a href="https://instagram.com/albertoclock" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://facebook.com/albertoclock" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V13h2.7v8z"/></svg></a>
+      </p>
+    </div>
+  </div>
+  <p class="copyright">&copy; 2026 Alberto Clock. All rights reserved.<br><span class="visitor-count">👁 Visitors: <strong id="visitor-count">…</strong></span></p>
+</footer>
+
+<!-- Chat bot -->
+<button id="chat-btn">💬 Chat Bot</button>
+<div id="chat-box">
+  <div id="chat-head">💬 Alberto Clock Assistant</div>
+  <div id="chat-log"></div>
+  <div id="chat-emojis"><button type="button" aria-label="Emoji 😀">😀</button><button type="button" aria-label="Emoji 😊">😊</button><button type="button" aria-label="Emoji 👍">👍</button><button type="button" aria-label="Emoji 🙏">🙏</button><button type="button" aria-label="Emoji ❤️">❤️</button><button type="button" aria-label="Emoji 🎉">🎉</button><button type="button" aria-label="Emoji ⌚">⌚</button><button type="button" aria-label="Emoji 🛒">🛒</button></div>
+  <form id="chat-form">
+    <input id="chat-input" type="text" placeholder="Type your question..." autocomplete="off">
+    <button class="btn btn-small" type="submit">Send</button>
+    </form>
+</div>
+
+<!-- Contact popup -->
+<div class="popup-overlay" id="contact-popup">
+  <div class="popup-box">
+    <h3>Thank You!</h3>
+    <p>We have received your message and will get back to you shortly.</p><br>
+    <button class="btn" id="contact-ok">OK</button>
+  </div>
+</div>
+
+<!-- Repair popup -->
+<div class="popup-overlay" id="repair-popup">
+  <div class="popup-box">
+    <h3>Request Received!</h3>
+    <p>Your repair request has been received. Our team will contact you shortly.</p><br>
+    <button class="btn" id="repair-ok">OK</button>
+  </div>
+</div>
+
+<script src="js/media.js"></script>
+<script src="js/main.js"></script>
+<script src="js/customize.js"></script>
+</body>
+</html>
